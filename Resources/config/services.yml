@@ -1,0 +1,6 @@
+services:
+
+    stk_ace.form.type.ace_editor:
+        class: STK\AceBundle\Form\Type\AceEditorType
+        tags:
+            - { name: form.type }
