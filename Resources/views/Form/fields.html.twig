@@ -1,11 +1,14 @@
 {% block ace_editor_widget %}
     {% spaceless %}
         <script src="{{ asset('bundles/stkace/ace/src-min/ace.js') }}" type="text/javascript" charset="utf-8"></script>
-        <script>
+        <pre id="editor"></pre>
+        <script type="text/javascript">
+            (function() {
+
+            })();
             var editor = ace.edit("editor");
             editor.setTheme("ace/theme/twilight");
             editor.session.setMode("ace/mode/javascript");
         </script>
-        <pre id="editor"></pre>
     {% endspaceless %}
 {% endblock %}
