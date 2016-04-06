@@ -7,7 +7,7 @@
             (function() {
                 var editor = ace.edit("ace_{{ id }}");
                 editor.setTheme("ace/theme/twilight");
-                editor.session.setMode("ace/mode/javascript");
+                editor.session.setMode("{{ mode }}");
 
                 var textarea = document.getElementById('{{ id }}');
                 textarea.style.visibility = 'hidden';
