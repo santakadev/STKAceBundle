@@ -10,6 +10,8 @@
 
             (function() {
                 var textarea = document.getElementById('{{ id }}');
+                textarea.style.visibility = 'hidden';
+
                 editor.getSession().on('change', function(){
                     textarea.value = editor.getSession().getValue();
                 });
